@@ -8,7 +8,7 @@ public class MainCameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		ball = GameObject.Find ("ball");
+		ball = GameObject.Find ("Ball");
 	}
 	
 	// Update is called once per frame
