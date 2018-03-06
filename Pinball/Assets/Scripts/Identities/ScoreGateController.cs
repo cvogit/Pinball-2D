@@ -18,7 +18,7 @@ public class ScoreGateController : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D col) {
 		if (col.gameObject.tag == "Ball") {
-			GameController.gameObject.GetComponent<GameController>().HandleDeath ();
+			GameController.gameObject.GetComponent<GameController>().HandleDeath (col.gameObject);
 		}
 	}
 }

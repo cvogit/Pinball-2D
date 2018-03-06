@@ -29,15 +29,15 @@ public class GameController : MonoBehaviour {
 	}
 
 	// Shoot the ball and continute the game
-	public void ContinueGame() {
-		DisableGateCollision ();
+	public void ContinueGame(GameObject tball) {
+		DisableGateCollision (tball);
 	}
 
 	// Disable score gate collision
-	public void DisableGateCollision() {
-		Physics2D.IgnoreCollision (Ball.gameObject.GetComponent<Collider2D> (), ScoreGate.gameObject.GetComponent<Collider2D> ());
-		Physics2D.IgnoreCollision (Ball.gameObject.GetComponent<Collider2D> (), ShootGate.gameObject.GetComponent<Collider2D> ());
-		Physics2D.IgnoreCollision (Ball.gameObject.GetComponent<Collider2D> (), ShootGate2.gameObject.GetComponent<Collider2D> ());
+	public void DisableGateCollision(GameObject tball) {
+		Physics2D.IgnoreCollision (tball.gameObject.GetComponent<Collider2D> (), ScoreGate.gameObject.GetComponent<Collider2D> ());
+		Physics2D.IgnoreCollision (tball.gameObject.GetComponent<Collider2D> (), ShootGate.gameObject.GetComponent<Collider2D> ());
+		Physics2D.IgnoreCollision (tball.gameObject.GetComponent<Collider2D> (), ShootGate2.gameObject.GetComponent<Collider2D> ());
 
 		GateOn = false;
 	}
@@ -75,10 +75,10 @@ public class GameController : MonoBehaviour {
 		return Score;
 	}
 
-	public void HandleDeath() {
+	public void HandleDeath(GameObject tball) {
 		Life--;
 		UpdateLifeBoard ();
-		ContinueGame ();
+		ContinueGame (tball);
 
 		if (Life == 0)
 			EndGame ();
