@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1103833807062052}
   m_LocalRotation: {x: -0, y: -0, z: -0.36847654, w: 0.92963713}
-  m_LocalPosition: {x: -1.02, y: -2.85, z: 0}
+  m_LocalPosition: {x: 4.19, y: -2.54, z: -4.295748}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -69,8 +69,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.09616904, y: 0.098416194}
-      - {x: -0.08920422, y: -0.10615428}
-      - {x: 0.093754075, y: -0.09200363}
+      - {x: -0.09941319, y: -0.102400385}
+      - {x: 0.10041934, y: -0.09909032}
       - {x: 0.10161677, y: 0.097603224}
 --- !u!95 &95415165487672900
 Animator:
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956ae2b87141b2b44a61b88ea8a6d8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offTime: 4
+  mOffTime: 8
 --- !u!114 &114601469247511830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,7 +112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd02025bbba102549a23cc3670ffeb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 2
+  PopupFadePrefab: {fileID: 1918401156443212, guid: ae88cc44158a4de45aa41a04f871592a,
+    type: 2}
+  mPoint: 4
 --- !u!212 &212489867374746872
 SpriteRenderer:
   m_ObjectHideFlags: 1

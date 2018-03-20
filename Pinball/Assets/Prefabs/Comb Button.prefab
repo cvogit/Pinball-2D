@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4138702735271106}
   - component: {fileID: 212459119510944488}
   - component: {fileID: 60829795995131732}
+  - component: {fileID: 114155003989345458}
   m_Layer: 0
   m_Name: Comb Button
   m_TagString: Untagged
@@ -126,6 +127,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5502837, y: 0.1001615}
   m_EdgeRadius: 0
+--- !u!114 &114155003989345458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1197878970351032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d97890fb94ff344adae28e38e1a109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mCombItemBlockage: {fileID: 0}
+  mUnpressedButton: {fileID: 21300000, guid: d7c691c933db29f41b40a34c91e27d83, type: 3}
+  mPressedButton: {fileID: 21300000, guid: 278af00eeca7f4a40bcb89dc192f1ad4, type: 3}
 --- !u!212 &212459119510944488
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -159,7 +174,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d7c691c933db29f41b40a34c91e27d83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

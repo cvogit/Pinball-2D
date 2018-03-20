@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BounceWallController : MonoBehaviour {
 
+	public GameObject SoundController;
+
 	private float force = 0.4f;
 	private Rigidbody2D ballRigidbody;
 
@@ -20,15 +22,15 @@ public class BounceWallController : MonoBehaviour {
 
 		if (col.gameObject.tag == "Ball") {
 
-			//GameObject currentGameObject = this.gameObject;
-				
-			//currentGameObject.GetComponent<Transform> ().position.x = Mathf.Sin (1.0f);
-
 			ShakeSprite ();
+			SoundController.GetComponent<AudioController> ().PlayBounceWall ();
 
 			// Bounce ball
 			ballRigidbody = col.gameObject.GetComponent<Rigidbody2D> ();
-			ballRigidbody.AddForce(-1 * col.contacts[0].normal * force, ForceMode2D.Impulse);
+			int tNumContacts = col.GetContacts (col.contacts);
+
+			if(tNumContacts > 0 )
+				ballRigidbody.AddForce(-1 * col.contacts[0].normal * force, ForceMode2D.Impulse);
 
 		}
 	}

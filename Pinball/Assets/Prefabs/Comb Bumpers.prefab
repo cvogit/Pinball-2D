@@ -165,8 +165,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1965887367835052}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0387331, y: 3.630023, z: 0.0764663}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.968733, y: 2.160023, z: -4.219282}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4295540953264630}
@@ -344,7 +344,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd02025bbba102549a23cc3670ffeb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 1
+  PopupFadePrefab: {fileID: 1918401156443212, guid: ae88cc44158a4de45aa41a04f871592a,
+    type: 2}
+  mPoint: 2
 --- !u!114 &114077335358870304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -356,7 +358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd02025bbba102549a23cc3670ffeb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 1
+  PopupFadePrefab: {fileID: 1918401156443212, guid: ae88cc44158a4de45aa41a04f871592a,
+    type: 2}
+  mPoint: 2
 --- !u!114 &114098991413760982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -368,14 +372,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd02025bbba102549a23cc3670ffeb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 1
+  PopupFadePrefab: {fileID: 1918401156443212, guid: ae88cc44158a4de45aa41a04f871592a,
+    type: 2}
+  mPoint: 2
 --- !u!114 &114772375582826130
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1669747521395590}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a01bdd9d31e3b449bd58b86801ce3d5, type: 3}
   m_Name: 
@@ -392,14 +398,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd02025bbba102549a23cc3670ffeb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 1
+  PopupFadePrefab: {fileID: 1918401156443212, guid: ae88cc44158a4de45aa41a04f871592a,
+    type: 2}
+  mPoint: 2
 --- !u!114 &114858895491842920
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1024687103900232}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a01bdd9d31e3b449bd58b86801ce3d5, type: 3}
   m_Name: 
@@ -451,7 +459,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1d8e7e1da7f06d4428bb5e351c37ecb8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 166b892eb660b324c8d0ed00a43cdaec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

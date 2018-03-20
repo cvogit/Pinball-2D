@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1506948470544116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.5887175, y: -0.3834598, z: -4.095535}
+  m_LocalPosition: {x: 4.91, y: 2.06, z: -8.391283}
   m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -87,14 +87,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd02025bbba102549a23cc3670ffeb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 1
+  PopupFadePrefab: {fileID: 1918401156443212, guid: ae88cc44158a4de45aa41a04f871592a,
+    type: 2}
+  mPoint: 2
 --- !u!114 &114416017019472690
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1506948470544116}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a01bdd9d31e3b449bd58b86801ce3d5, type: 3}
   m_Name: 
