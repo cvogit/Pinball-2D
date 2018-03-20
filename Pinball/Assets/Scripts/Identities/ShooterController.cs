@@ -7,7 +7,7 @@ public class ShooterController : MonoBehaviour {
 
 	public float  mThrust;
 
-	public GameObject SoundController;
+	private GameObject SoundController;
 
 	private bool  mCharging;
 	private float mLerpTime;
@@ -44,13 +44,7 @@ public class ShooterController : MonoBehaviour {
 				// Shooter can't move farther than -5.2		
 				if (tPosition.y < -5.2f)
 					tPosition.y = -5.2f;
-				
-				// Move shooter according to physic time passed
-				mLerpTime += Time.fixedDeltaTime;
-				if (mCurrentLerpTime > mLerpTime)
-					mCurrentLerpTime = mLerpTime;
 
-				float tPerc = mCurrentLerpTime / mLerpTime;
 				gameObject.transform.position = tPosition;
 			
 				mYPositionChange = 0f;

@@ -71,8 +71,8 @@ public class BossController : MonoBehaviour {
 	{
 
 		if (col.gameObject.tag == "Ball") {
-			
 			SoundController.GetComponent<AudioController> ().PlayBossHit ();
+			DisableBallCollision ();
 
 			Rigidbody2D ballRigidbody = col.gameObject.GetComponent<Rigidbody2D> ();
 			ballRigidbody.AddForce (-1 * col.contacts [0].normal * pForce, ForceMode2D.Impulse);
@@ -84,6 +84,8 @@ public class BossController : MonoBehaviour {
 				mProvoked = true;
 				mPhrase = 1;
 				Invoke("TakePhraseAction", 2);
+				Invoke ("EnableBallCollision", 2);
+
 			} else {
 				BossHit ();
 				mHealth -= 1;
@@ -94,8 +96,7 @@ public class BossController : MonoBehaviour {
 
 				mPhrase++;
 				RemoveBossAttacks ();
-				DisableBallCollision ();
-				// TODO PlayDamagedAnimation
+
 				BossHit ();
 				Invoke("TakePhraseAction", 2);
 			}
@@ -172,7 +173,7 @@ public class BossController : MonoBehaviour {
 			SoundController.GetComponent<AudioController> ().PlayWellAppear ();
 
 			mPushWells.Add (mNewWell);
-			Invoke ("EnableBallCollision", 2);
+			EnableBallCollision ();
 		} else if (mPhrase == 3) {
 			// Create Pull Well Orbit
 			AddWellShield ();

@@ -12,6 +12,7 @@ public class AudioController : MonoBehaviour {
 	public AudioClip 	BounceWallSound;
 	public AudioClip 	BossHitSound;
 	public AudioClip 	BossUltiSound;
+	public AudioClip 	DeathSound;
 	public AudioClip 	HandHitSound;
 	public AudioClip 	ShooterSound;
 	public AudioClip 	StarSound;
@@ -42,6 +43,10 @@ public class AudioController : MonoBehaviour {
 
 	public void PlayBossUlti(){
 		SoundSource.PlayOneShot (BossUltiSound);
+	}
+
+	public void PlayDeath(){
+		SoundSource.PlayOneShot (DeathSound);
 	}
 
 	public void PlayHandHit(){

@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
 	public Text LifeBoard;
 	public Text ScoreBoard;
 
+	private GameObject SoundController;
 	private bool mShootGateClosed;
 	private GameObject mShooter;
 	private GameObject mShootGateTop;
@@ -28,6 +29,8 @@ public class GameController : MonoBehaviour {
 		mShooter 			= GameObject.Find ("Shooter");
 		mShootGateTop 		= GameObject.Find ("Shoot Gate Top");
 		mShootGateBottom 	= GameObject.Find ("Shoot Gate Bottom");
+		SoundController 	= GameObject.Find ("Audio Controller");
+
 		mShootGateClosed 	= false;
 
 		GameObject mBall = GameObject.Find ("Ball");
@@ -48,6 +51,7 @@ public class GameController : MonoBehaviour {
 		mBoss.GetComponent<BossController> ().DestroyUltimateWell ();
 		mLife--;
 		UpdateLifeBoard ();
+		SoundController.GetComponent<AudioController> ().PlayDeath ();
 
 		if (mLife == 0)
 			EndGame ();
@@ -124,6 +128,7 @@ public class GameController : MonoBehaviour {
 
 		GameObject tNewBall;
 		tNewBall = Instantiate (BallPrefab, new Vector3(2.65f, -4.0f, 0), Quaternion.identity);
+		mBall = tNewBall;
 
 		// Tell important GameObject about the new ball
 		mMainCamera.gameObject.GetComponent<MainCameraController> ().SetCentralObject (tNewBall);

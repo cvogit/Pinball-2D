@@ -1,11 +1,23 @@
 fileFormatVersion: 2
 guid: 77aca83fd470c34409fd99411f9421d4
-timeCreated: 1521495891
+timeCreated: 1521505347
 licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - SoundSource: {instanceID: 0}
+  - PreGameSound: {fileID: 8300000, guid: 62de2b628ef16cf43aabec97eea966b6, type: 3}
+  - MainGameSound: {fileID: 8300000, guid: 825f4442e42de3143a1879c2ceaea5b3, type: 3}
+  - BumperHitSound: {fileID: 8300000, guid: e016e2db9c97feb4dad5a57cca1ff01a, type: 3}
+  - BounceWallSound: {fileID: 8300000, guid: c810d0bf3c1be6b4580a4d2fabc1179d, type: 3}
+  - BossHitSound: {instanceID: 0}
+  - BossUltiSound: {instanceID: 0}
+  - DeathSound: {instanceID: 0}
+  - HandHitSound: {fileID: 8300000, guid: a3354fbb5c280ea4399255d18ace86d4, type: 3}
+  - ShooterSound: {fileID: 8300000, guid: b155e13f23fd5d243a0d71f74fd609a7, type: 3}
+  - StarSound: {fileID: 8300000, guid: cbed05f9dd70a4c428e56b591fcdf5f3, type: 3}
+  - WellAppearSound: {fileID: 8300000, guid: 1db533d5c0b0a2343abf658a394643bc, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

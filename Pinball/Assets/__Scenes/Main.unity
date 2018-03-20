@@ -982,7 +982,6 @@ GameObject:
   - component: {fileID: 290583093}
   - component: {fileID: 290583095}
   - component: {fileID: 290583094}
-  - component: {fileID: 290583096}
   m_Layer: 0
   m_Name: Right Flipper
   m_TagString: Flipper
@@ -1143,17 +1142,6 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 45
---- !u!114 &290583096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 290583090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 117885becd0dabe4aa0360e04f4ee58c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &306336877
 GameObject:
   m_ObjectHideFlags: 0
@@ -4397,6 +4385,7 @@ MonoBehaviour:
   BounceWallSound: {fileID: 8300000, guid: c810d0bf3c1be6b4580a4d2fabc1179d, type: 3}
   BossHitSound: {fileID: 8300000, guid: 828d4fd8527cb43479f35d0fea88474a, type: 3}
   BossUltiSound: {fileID: 8300000, guid: 3075dd0643b12d44793bedd8037f6b9e, type: 3}
+  DeathSound: {fileID: 8300000, guid: 6f13dbe4b8b7dae4fb7f6435226444b3, type: 3}
   HandHitSound: {fileID: 8300000, guid: a3354fbb5c280ea4399255d18ace86d4, type: 3}
   ShooterSound: {fileID: 8300000, guid: b155e13f23fd5d243a0d71f74fd609a7, type: 3}
   StarSound: {fileID: 8300000, guid: cbed05f9dd70a4c428e56b591fcdf5f3, type: 3}
@@ -5267,7 +5256,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mThrust: 0
-  SoundController: {fileID: 0}
 --- !u!1 &1813262961 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1452028775271828, guid: 0c2126e3a35c14d43b1df7fc7ccf7126,

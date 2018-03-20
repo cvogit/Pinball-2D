@@ -20,10 +20,8 @@ public class VortexController : MonoBehaviour {
 		if (Vector2.Distance (gameObject.transform.position, ball.transform.position) < radius) {
 
 			Vector2 direction = ball.transform.position - transform.position;
-			float gForce = blackHoleMass / direction.sqrMagnitude;
 
 			ball.gameObject.GetComponent<Rigidbody2D> ().velocity *= 0.7f;
-			//ball.gameObject.GetComponent<Rigidbody2D>().AddForce(-direction.normalized * gForce * Time.deltaTime);
 
 		}
 	}
